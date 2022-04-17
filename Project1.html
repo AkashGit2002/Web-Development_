@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converture</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <h1>Temperature Converter</h1>
+    <div id="out">
+        <div class="in">
+            <label>Celsius (&#8451;)</label><br>
+            <input type="number" value="0" id="cel" class="inp">
+        </div>
+        <div class="in">
+            <label>Fahrenhite (&#8457;)</label><br>
+            <input type="number" value="32" id="fah" class="inp">
+        </div>
+
+    </div>
+    <style>
+        body {
+            background-color: #ffff;
+        }
+
+        #out {
+            padding: 50px 100px;
+            background-color: rgb(177, 186, 192);
+            text-align: center;
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(27, 37, 129);
+        }
+
+        .in {
+            display: inline-block;
+            font-size: 30px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .inp {
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var cel = document.getElementById("cel");
+        var fah = document.getElementById("fah");
+
+        cel.addEventListener('input', function () {
+            let c = this.value;
+            let f = (c * 9 / 5) + 32;
+            if (!Number.isInteger(f)) {
+                f = f.toFixed(4);
+            }
+            fah.value = f;
+        });
+        fah.addEventListener('input', function () {
+            let f = this.value;
+            let c = (f - 32) * 5 / 9;
+            if (!Number.isInteger(c)) {
+                c = c.toFixed(4);
+            }
+            cel.value = c;
+        });
+
+
+        let
+    </script>
+
+
+    
+</body>
+</html>

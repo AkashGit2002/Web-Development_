@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <style>
+        body{
+            padding: 50px 100px;
+        }
+        h1{
+            background-color:greenyellow;
+            text-align: center;
+            margin:0px;
+        }
+        #textbox{
+            text-align: center;
+            margin:0px;
+            width: 1146px;
+            height: 260px;
+            font-size: larger;
+        }
+        p{
+            background-color:yellow;
+            text-align: center;
+            margin:0px;
+            width: 1138px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 20px;
+            padding:10px;
+        }
+    </style>
+   
+</head>
+<body>
+    <h1>Word And Character Counter</h1>
+    <textarea id="textbox" cols="30" rows="10" placeholder="Write you Paragraph"></textarea>
+    <p>
+        <span id="w">0</span> Words and <span id="c"> 0</span> Characters
+    </p> 
+    <script>
+        var textbox=document.getElementById("textbox");
+        textbox.addEventListener('input',function(){
+            var text=this.value;
+            let char=text.length;
+            
+            document.getElementById("c").innerHTML=char;
+            text=text.trim();
+            let word=text.split(" ");
+            var Nlist=word.filter(function(arg){
+                    return arg!="";
+            });
+            document.getElementById("w").innerHTML=Nlist.length;
+        });
+
+    </script>
+</body>
+</html>
+
+
+

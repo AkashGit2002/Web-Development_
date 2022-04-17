@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        #form{
+            border: 1px solid red;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+            margin-top: 200px;
+            padding:40px;
+            text-align: center;
+            height: 300px;
+            background-color: beige;
+        }
+        #button{
+            height: 40px;
+            width: 200px;
+            margin-top: 10px;
+            background-color:rgb(255, 71, 184);
+        }
+        .t{
+            margin: 15px;
+            height: 30px;
+            width: 250px;
+        }
+        body{
+            background-color: aquamarine;
+        }
+        .error{
+            color: red;
+            text-align: left;
+            margin: 0px;
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h1>Login</h1>
+        <form action="" onsubmit="return validate()">
+            <input type="text" placeholder="User Name" class="t" id="u"><br>
+            <p id="e1" class="error"></p>
+            <input type="text" placeholder="Password" class="t" id="p"><br>
+            <p id="e2" class="error"></p>
+            <input type="submit" id="button">
+        </form>
+    </div> 
+    <script>
+        var user=document.getElementById("u");
+        var pass=document.getElementById("p");
+
+        function validate(){
+            var flag=0;
+            var f=0;
+            if (user.value=="")
+            {
+                document.getElementById("e1").innerHTML="User Name is Empty";
+                flag=1;
+            }
+            if(user.value.length<3 && flag!=1){
+                document.getElementById("e1").innerHTML="User Name is Less than 3";
+                flag=1;
+            }
+            if(pass.value==""){
+                document.getElementById("e2").innerHTML="This is a Empty PassWord";
+                f=1;
+            }
+            if(user.value.length<3 && f!=1){
+                document.getElementById("e2").innerHTML=" PassWord size is Less than 3";
+                f=1;
+            }
+            if(flag==0 && f==0)
+            {
+                return(true);
+            }
+            return(false);
+        }
+        
+    </script>  
+</body>
+</html>

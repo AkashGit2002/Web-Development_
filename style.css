@@ -1,0 +1,335 @@
+/*p{
+    color:yellow;
+    }
+*/
+/* #bg{
+    background-color:rgb(1, 65, 184);
+
+}
+body{
+    background-color:purple;
+
+} */
+/* #text{
+     width:200px;
+     height:200px
+     /*
+    color:green;
+    border:1px solid brown;
+    text-align: right; /*alignment by default it is left
+    direction:rtl;  */
+    /* 
+     */
+
+/* 
+ */
+ /* a{
+     text-decoration: none;
+ }
+ a:link{
+     color:brown;
+ }
+ a:visited{
+     color:lime;
+ }
+ a:hover{
+     color:aquamarine;
+ }
+ a:active{
+     color:blue;
+ } */
+ 
+ /* h1{
+     /* front-weight:regular; */
+     /* font-family: 'Roboto', sans-serif;
+ }
+ p{
+     front-size: 30px;
+     front-weight: bold;
+     /* font-family: 'Urbanist', sans-serif; */
+     /* front-style: italic; */
+/* #parent{
+    border: 1px solid red;
+    width: 1000mm
+}
+#child{
+    border: 1px solid red;
+    top: auto;
+    width: 100mm
+} */
+/* div{
+    border: 1px solid blue;
+    width: 500px;
+    background-color: greenyellow;
+    /* margin:100px; */
+    /* padding:50px;
+     margin: -10px 20px; 
+     opacity:; */ 
+    /* box-shadow: -10px 20px 5px 10px rebeccapurple,10px 20px 5px 10px cyan; */
+/* }
+body{
+    border: 5px dotted red;
+    height: 600px;
+}
+#heado{
+    text-align: center;
+}
+#col{
+    border: 1px solid blue;
+    width: 500px;
+    background-color: greenyellow;
+    /* margin:100px; */
+    /* padding:50px; */
+    /* margin: 100px; */
+    /* box-shadow: -10px 20px 5px 10px rebeccapurple,10px 20px 5px 10px cyan; */
+
+
+/* #gradian{
+    height: 1000px;
+    border: 1px solid red;
+    background-image: radial-gradient(circle, green 20%,rgb(76, 0, 255),rgb(136, 255, 0));
+
+} */
+/* #Overflow{
+    height: 200px;
+    border: 1px solid green;
+    background-color: turquoise;
+    overflow: auto;
+}
+textarea{
+    
+} */
+/* table{
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+th{
+    border: 1px solid red;
+} */
+/* :root{
+    --funvar:red;
+    --avar:rgb(32, 60, 218);
+}
+#fun{
+    background-color:var(--funvar);
+    height: 200px;
+    width: 50%;
+    margin:10px;
+}
+a{
+    background-color: var(--avar);
+    padding:10px;
+    margin: 20px;
+} */
+/* #green{
+    color:deeppink;
+}
+#blue{
+    color:turquoise;
+}
+#initial{
+    color:initial;
+}
+#inherit{
+    color:inherit;
+} */
+/* ::selection{
+    color:hotpink;
+    background:yellow;
+} */
+/* #unlist{
+    background-color: greenyellow;
+    height: auto;
+    list-style-type: none;
+    overflow: auto;
+}
+li{
+    color:brown;
+    padding: 10px 15px;
+    float:left;
+} */
+/* p{
+    border: 1px solid violet;
+} */
+ /* #content{
+ border:1px solid red; 
+    width:70%;
+    background-color: yellow;
+    height: 200px;
+    float:left;
+
+}
+#sidebar{
+    width:30%;
+    background-color: limegreen;
+    height: 200px;
+    float:left;
+}  */
+/* #link{
+   padding: 20px;
+   margin: 20px;
+}
+a{
+    text-decoration:none;
+    background-color: blueviolet;
+    padding:10px 20px; 
+    color:lime;
+    display:inline-block;
+    transform: scale(2,3);
+    
+} */
+/* transform: perspective(300px) rotate3d()
+perspective-origin: 50% 50%; */
+/* #cover{
+    /* border: 2px solid red; */
+    /* height: 200px;
+    weight: 100px;
+    margin: 150px;
+    /* transition-property: background-color;
+    transition-duration: 1ms; 
+    transition-delay: 500ms ;   */
+    /* transition: width 2s,height 5s; */ 
+
+/* }
+#cover:hover{
+    background-color: blue;
+    width: 200px;
+    height: 500px;
+} */ 
+/* @keyframes changecolor {
+    0% {background-color: red; border-radius: 0%;}
+    10% {background-color: rgb(0, 255, 76); border-radius: 10%;}
+    20% {background-color: rgb(0, 140, 255);border-radius: 20%;}
+    30% {background-color: rgb(0, 255, 170);border-radius: 30%;}
+    40% {background-color: rgba(255, 136, 0, 0);border-radius: 20%;}
+    50% {background-color: rgb(255, 0, 106);border-radius: 10%;}
+    60% {background-color: rgb(187, 255, 0);border-radius: 0%;}
+   
+}
+#animate{
+    background-color: firebrick;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    animation-name:changecolor;
+    animation-duration: 2s;
+    /* animation-delay: 2s;  */
+    /* animation-iteration-count: infinite; */
+    /* animation-timing-function: linear; */
+    /* animation-direction: reverse; */
+/* #div1{
+    width:70%;
+    float: left;
+    background-color: rgb(255, 0, 170);
+}
+#div2{
+    width:30%;
+    float: left;
+    background-color: red;
+}
+h1{
+    font-size: 80px;
+}
+@media screen  and (max-width:768px){
+    #div1{
+        width:50%;
+        float: left;
+        background-color: rgb(0, 255, 98);
+    }
+    #div2{
+        width:50%;
+        float: left;
+        background-color: rgb(0, 204, 255);
+    } 
+} */
+/* div{
+    column-count:3;
+    column-gap: 50px;
+    column-rule: 1px solid blue;
+    column-width: 300px;
+}
+h1{
+    column-span: all;
+} */
+/* .container{
+    height: 544px;
+    weight: 200px;
+    border: 2px solid blue;
+    /* Initialize the container as a Flex Box */
+    /* display: flex;
+    /* Default value of Flex Diection is Row */
+    /* flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-wrap: wrap-reverse; */
+
+/* .item{
+    background-color: limegreen;
+    border: 2px solid orange;
+    margin: 2px;
+    padding: 20px;
+    color:yellow;
+} */ 
+
+/* .container{
+    background-color: red;
+    height: 700px;
+    weight: 900px;
+    display: grid;
+}
+.item{
+    background-color:yellow;
+    height: 700px;
+    weight: 900px;
+
+} */
+/* 
+body{
+    margin:0;
+}
+.slide-con{
+    position: relative;
+    width:100%;
+}
+.cals img{
+    width:100%;
+    border: 1px solid red;
+    height: 400px;
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top:45%;
+    color:black;
+    background-color: azure;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.next{
+   right:10px;
+}
+.prev{
+    left:10px;
+}
+.caption{
+    color:black;
+    font-size: 30px;
+    position:absolute;
+    font-weight: bold;
+    bottom: 0px;
+    width: 100%;;
+    padding-left:19px;
+    text-align: center;
+    background-color: yellow;
+}
+.cals{
+    display: none;
+} */
+
+body{
+    background-color: yellow;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <script src="JavaScript/first.js"></script> -->
+    <div class="slide-con">
+        <div class="cals">
+            <img src="https://jssors8.azureedge.net/demos/img/gallery/720x480/005.jpg" alt="Error">
+            <div class="caption">Caption Text 1</div>
+        </div>
+        <div  class="cals">
+            <img src="https://www.jaykayonline.com/slider/slider3.jpg" alt="Error">
+            <div class="caption">Caption2</div>
+        </div>
+        <div  class="cals">
+            <img src="https://www.jaykayonline.com/slider/slider6.jpg" alt="Error">
+            <div class="caption">Caption3</div>
+        </div>
+        <div  class="cals">
+            <img src="https://jssors8.azureedge.net/demos/img/gallery/980x380/002.jpg" alt="Error">
+            <div class="caption">Caption4</div>
+
+        </div>
+        <span class="arrow prev" >&#10094;</span>
+        <span class="arrow next">&#10095;</span>
+    </div>
+    <script>
+        slideshow(0);
+// function option(num){
+//         flag=flag+num;
+//         slideshow(flag);
+// }
+function slideshow(num){
+        let slide=document.getElementsByClassName("cals");
+        // console.log(slide);
+        slide[num].style.display="block";
+        // if(num== slide.length){
+        //         flag=0;
+        //         num=0;
+        // }
+        for(let y of  slide)
+        {
+                y.style.display="none";
+        }
+      
+}
+    </script>
+    <!--  onclick="option(1)" -->
+   
+</body>
+</html>
